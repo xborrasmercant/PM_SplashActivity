@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tableRowStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="tableItemStyle">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">130dp</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="splashTitleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:background">@color/green</item>
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

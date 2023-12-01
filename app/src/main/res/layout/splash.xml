@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <TextView
+        android:id="@+id/splashTitle1"
+        style="@style/splashTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/splashTitleTop" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_gray">
+
+
+        <TableRow
+            style="@style/tableRowStyle">
+
+            <ImageView
+
+                android:id="@+id/pic1"
+                style="@style/tableItemStyle"
+                android:src="@drawable/splash1" />
+
+            <ImageView
+                android:id="@+id/pic2"
+                style="@style/tableItemStyle"
+                android:src="@drawable/splash2" />
+        </TableRow>
+
+        <TableRow
+            style="@style/tableRowStyle">
+
+
+            <ImageView
+                android:id="@+id/pic3"
+                style="@style/tableItemStyle"
+                android:src="@drawable/splash3" />
+
+            <ImageView
+                android:id="@+id/pic4"
+                style="@style/tableItemStyle"
+                android:src="@drawable/splash4" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/splashTitle2"
+        style="@style/splashTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/splashTitleBottom" />
+
+    <TextView
+        android:id="@+id/splashCopyright"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:text="@string/splashCopyright"
+        android:gravity="center"
+        android:textColor="@color/light_gray"
+        android:textStyle="italic" />
+</LinearLayout>
