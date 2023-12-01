@@ -19,7 +19,7 @@
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:background">@color/green</item>
         <item name="android:textColor">@color/light_gray</item>
-        <item name="android:textSize">50sp</item>
+        <item name="android:textSize">35sp</item>
         <item name="android:gravity">center</item>
     </style>
 </resources>

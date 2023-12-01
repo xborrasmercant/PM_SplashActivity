@@ -1,18 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/black">
+
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/splashTitle1"
+        style="@style/splashTitleStyle"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="60dp"
+        android:text="@string/splashTitleTop" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TableLayout
+        android:id="@+id/splashTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_gray">
+
+
+        <TableRow
+            android:id="@+id/splashTableRow1"
+            style="@style/tableRowStyle">
+
+            <ImageView
+
+                android:id="@+id/pic1"
+                style="@style/tableItemStyle"
+                android:src="@drawable/splash1" />
+
+            <ImageView
+                android:id="@+id/pic2"
+                style="@style/tableItemStyle"
+                android:src="@drawable/splash2" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/splashTableRow2"
+            style="@style/tableRowStyle">
+
+
+            <ImageView
+                android:id="@+id/pic3"
+                style="@style/tableItemStyle"
+                android:src="@drawable/splash3" />
+
+            <ImageView
+                android:id="@+id/pic4"
+                style="@style/tableItemStyle"
+                android:src="@drawable/splash4" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/splashTitle2"
+        style="@style/splashTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/splashTitleBottom" />
+
+    <TextView
+        android:id="@+id/splashCopyright"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:text="@string/splashCopyright"
+        android:gravity="center"
+        android:textColor="@color/light_gray"
+        android:textStyle="italic" />
+</LinearLayout>
